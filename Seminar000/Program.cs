@@ -55,7 +55,7 @@
 //     number1++;
 // }
 
-
+//Задача 5 - вывести последнюю цифру из трехзначного числа
 Console.WriteLine("Введите трехзначное число ");
 int number = int.Parse(Console.ReadLine());
 int result = number % 10;
