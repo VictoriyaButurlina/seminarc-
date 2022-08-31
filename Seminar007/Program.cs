@@ -125,10 +125,10 @@
 
 
 // найдите сумму элементовнаходящихся по диагонали
-// int [,] arr = GetArray(3, 4, 1, 10);
-// PrintArray(arr);
-// int sum = MakeArray(arr);
-// Console.WriteLine($"Сумма элементов на главной диагонали {sum}");
+int [,] arr = GetArray(3, , 1, 10);
+PrintArray(arr);
+int sum = MakeArray(arr);
+Console.WriteLine($"Сумма элементов на главной диагонали {sum}");
 
 // int [,] GetArray (int m , int n, int minValue, int maxValue)
 // {
@@ -144,32 +144,32 @@
 // return array;
 // }
 
-// //печать двумерного массива
-// void PrintArray (int [,] array)
-// {
-//   for (int i=0; i < array.GetLength(0); i++)
-//     {
-//         for (int j=0; j < array.GetLength(1); j++)
+//печать двумерного массива
+void PrintArray (int [,] array)
+{
+  for (int i=0; i < array.GetLength(0); i++)
+    {
+        for (int j=0; j < array.GetLength(1); j++)
     
-//             {
-//                 Console.Write($"{array[i,j]} ");
-//             }
-//             Console.WriteLine();
-//     }
-// }
+            {
+                Console.Write($"{array[i,j]} ");
+            }
+            Console.WriteLine();
+    }
+}
 
 
-// //печать двумерного массива нового
-// int MakeArray(int[,] array)
-// { int sum =0;
-//     for (int i = 0; i < array.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < array.GetLength(1); j++)
-//         { if (i==j)
-//             {
-//                 sum+=array[i,j];
-//             }
-//         }
-//     }
-//     return sum;
-// }
+//печать двумерного массива нового
+int MakeArray(int[,] array)
+{ int sum =0;
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        { if (i==j)
+            {
+                sum+=array[i,j];
+            }
+        }
+    }
+    return sum;
+}
